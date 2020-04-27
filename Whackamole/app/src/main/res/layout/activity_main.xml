@@ -10,7 +10,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        >
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -25,21 +26,21 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="O" />
+                android:text="@string/empty" />
 
             <Button
                 android:id="@+id/button_02"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="O" />
+                android:text="@string/empty" />
 
             <Button
                 android:id="@+id/button_03"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="*" />
+                android:text="@string/mole" />
         </LinearLayout>
 
         <LinearLayout
@@ -53,10 +54,10 @@
 
             <TextView
                 android:id="@+id/txt_score"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="TextView"
+
                 android:gravity="center"/>
         </LinearLayout>
 
