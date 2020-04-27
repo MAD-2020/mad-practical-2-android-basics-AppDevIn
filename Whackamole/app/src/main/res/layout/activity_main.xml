@@ -21,21 +21,21 @@
             android:id="@+id/buttonLinear">
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/button_01"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="O" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/button_02"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="O" />
 
             <Button
-                android:id="@+id/button3"
+                android:id="@+id/button_03"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -52,7 +52,7 @@
             >
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/txt_score"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
