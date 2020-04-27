@@ -49,11 +49,16 @@ public class MainActivity extends AppCompatActivity {
         txt_score.setText(score.toString());
     }
 
+    public Integer randomValue(){
+        Random ran = new Random();
+        return ran.nextInt(3);
+    }
+
 
     public void setNewMole()
     {
-        Random ran = new Random();
-        int randomLocation = ran.nextInt(3);
+
+        int randomLocation = randomValue();
 
 
         for (int i = 0; i < BUTTON_IDS.length; i++) {
