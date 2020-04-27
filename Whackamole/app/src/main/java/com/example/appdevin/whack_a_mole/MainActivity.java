@@ -25,7 +25,6 @@ public class MainActivity extends AppCompatActivity {
     */
 
     private static final int[] BUTTON_IDS = {R.id.button_01,R.id.button_02,R.id.button_03};
-    private static final String[] BUTTON__IDS_TAGS = {"Button Left Clicked!","Button Centre Clicked!","Button Right Clicked!"};
     Integer score = 0;
 
     TextView txt_score;
@@ -61,10 +60,11 @@ public class MainActivity extends AppCompatActivity {
         int randomLocation = randomValue();
 
 
-        for (int i = 0; i < BUTTON_IDS.length; i++) {
 
-            int id = BUTTON_IDS[i];
-            final int finalI = i;
+
+
+        for (int id :
+                BUTTON_IDS) {
 
             if(BUTTON_IDS[randomLocation] != id){
 
@@ -77,9 +77,6 @@ public class MainActivity extends AppCompatActivity {
                     public void onClick(View view) {
                         score--;
                         txt_score.setText(score.toString());
-                        setNewMole();
-                        Log.v(TAG, BUTTON__IDS_TAGS[finalI]);
-                        Log.v(TAG, "Missed, score deducted!");
                     }
                 });
             }
@@ -87,19 +84,15 @@ public class MainActivity extends AppCompatActivity {
                 Button button = findViewById(id);
                 button.setText("*");
 
-
                 button.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
                         score++;
                         txt_score.setText(score.toString());
-                        setNewMole();
-
-                        Log.v(TAG, BUTTON__IDS_TAGS[finalI]);
-                        Log.v(TAG, "Hit, score added!");
                     }
                 });
             }
+
         }
 
     }
