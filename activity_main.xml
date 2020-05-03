@@ -16,7 +16,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 android:layout_weight="1"
-                android:text="@string/empty"
+                android:text="0"
                 android:translationX="75dp"
                 android:translationY="250dp"/>
 
@@ -27,7 +27,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 android:layout_weight="1"
-                android:text="@string/empty"
+                android:text="0"
                 android:translationX="160dp"
                 android:translationY="250dp"
                 />
@@ -39,7 +39,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 android:layout_weight="1"
-                android:text="@string/mole"
+                android:text="*"
                 android:translationX="245dp"
                 android:translationY="250dp"/>
 
